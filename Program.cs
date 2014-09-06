@@ -45,14 +45,19 @@ namespace Darkcoin_mining_app
             mineprocess.Start();
 
 
-            Process[] pname = Process.GetProcessesByName("minerd");
-            if (pname.Length == 0)
-                //Console.WriteLine("nothing"); //not needed
-            else
-                mineprocess.Start();
+            //Next 8 lines not working currently
+            //public void checkrun()
+            //{
+            //    Process[] pname = Process.GetProcessesByName("minerd");
+            //        if (pname.Length == 0);
+            //    //Console.WriteLine("nothing"); //not needed
+            //    else
+            //        mineprocess.Start();
+            //}
+
 
             //would be there so output can he viewed, right now not necesary
-            Console.ReadLine();
+            //Console.ReadLine();
 
             /*
             Plans for the future updates
